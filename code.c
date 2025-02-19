@@ -3,8 +3,8 @@
 // "gcc code.c -o code" creates a runnable file of the code
 // ./'name of runnable file' runs the code
 
-/*
 int main() {
+    /*
     // Variables
     // integer
     int niceguy = 10;
@@ -53,5 +53,5 @@ int main() {
 
 
     return 2;
-}
 */
+}
