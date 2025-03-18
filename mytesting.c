@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdbool.h>
 // int main or whatever in front of int is ALWAYS your first function for the program to even function.
 /*
 int main() {
@@ -7,9 +8,10 @@ int main() {
     return 0;
 }
 */
+
 // The %c specifies that the variable that is %c is a character and the
 // ,"variable name" says that the %c is whatever myGrade is
-
+/*
 void sigma() {
   char myText[] = "Hello";
   printf("%s\n", myText);
@@ -19,17 +21,22 @@ void sigma() {
   printf("%c\n", myText[3]);
   printf("%c\n", myText[4]); 
 }
-// void makes it so you don't need to return anything for the function to function.
-int main() {
-    int myNum = 15;
-    int myOtherNum = 20;
 
-    myNum = myOtherNum;
-    printf("%d\n", myNum);
-    sigma();
+void bleh() {
+  int num1 = 5;
+  int num2 = 2;
+  float sum = (float) num1 / num2;
+  printf("%.1f\n", sum);
+  return;
 }
 
-int main() {
+void crack() {
+  int x = 5;
+  int y = 10;
+  printf("%i\n", x < y);
+}
+*/
+int flame() {
   // Create variables of different data types
   int items = 50;
   float cost_per_item = 9.99;
@@ -43,4 +50,19 @@ int main() {
 
   return 0;
 }
+
+int main() {
+  int myNum = 15;
+  int myOtherNum = 20;
+
+  myNum = myOtherNum;
+  printf("%d\n", myNum);
+  flame();
+}
+
+
+
+// void makes it so you don't need to return anything for the function to function.
+
+
 
