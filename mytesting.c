@@ -9,7 +9,7 @@ int main() {
 }
 */
 
-// The %c specifies that the variable that is %c is a character and the
+// The %c specifies that the variable that is %c a character and the
 // ,"variable name" says that the %c is whatever myGrade is
 /*
 void sigma() {
@@ -36,7 +36,8 @@ void crack() {
   printf("%i\n", x < y);
 }
 */
-int flame() {
+/*
+int cost_function() {
   // Create variables of different data types
   int items = 50;
   float cost_per_item = 9.99;
@@ -47,8 +48,20 @@ int flame() {
   printf("Number of items: %i\n", items);
   printf("Cost per item: %.2f %c\n", cost_per_item, currency);
   printf("Total cost = %.2f %c\n", total_cost, currency);
-
   return 0;
+}
+*/
+int even_odd_function() {
+  int num;
+    printf("Enter an integer: ");
+    scanf("%d", &num);
+
+    if(num % 2 == 0)
+        printf("%d is even. \n", num);
+    else
+        printf("%d is odd. \n", num);
+
+    return 0;
 }
 
 int main() {
@@ -57,7 +70,7 @@ int main() {
 
   myNum = myOtherNum;
   printf("%d\n", myNum);
-  flame();
+  even_odd_function();
 }
 
 
