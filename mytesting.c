@@ -64,13 +64,62 @@ int even_odd_function() {
     return 0;
 }
 
-int main() {
-  int myNum = 15;
-  int myOtherNum = 20;
+int time_function() {
+  int time;
+  printf("What time is it?");
+  scanf("%i", &time);
 
-  myNum = myOtherNum;
-  printf("%d\n", myNum);
-  even_odd_function();
+  if (time < 12) 
+      printf("It is the morning\n");
+   else if (time > 12) 
+       printf("It is the evening\n");
+   else 
+       printf("You wrote it wrong\n");
+  return 0;
+}
+
+int main() { 
+  for (int i = 0; i < 10; i++) {
+    printf("%d ", i);
+  }
+  int day = 6;
+  // the number would correspond with the number next to case
+
+switch (day) {
+  case 1:
+    printf("Monday");
+    break;
+  case 2:
+    printf("Tuesday");
+    break;
+  case 3:
+    printf("Wednesday");
+    break;
+  case 4:
+    printf("Thursday");
+    break;
+  case 5:
+    printf("Friday");
+    break;
+  case 6:
+    printf("Saturday");
+    break;
+  case 7:
+    printf("Sunday");
+    break;
+}
+
+int i = 0;
+  // 
+  // "do" does the operation once and then it will check while, doing it until the condition isn't true
+  do {
+    printf("%d\n", i);
+    i++;
+  }
+  while (i < 5);
+
+}
+  return 0;
 }
 
 
